@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="website.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+  <section id="banner">
+    <img src="./images/logo.webp" class="logo">
+    <div class="banner-text">
+        <h1>Photography</h1>
+        <p>Hey Mate!! I'm Abhinav Thapa Shrestha</p>
+        <div class="banner-btn">
+            <a href="#"><span></span>home</a>
+            <a href="#"><span></span>home</a>
+            <a href="#"><span></span>home</a>
+        </div>
+    </div>
+  </section>  
+  <div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+        </ul>
+    </nav>
+  </div>
+  <div id="menuBtn">
+    <img src="./images/menu.webp" id="menu">
+  </div>
+
+  <!-- features -->
+  <section id="features">
+    <div class="title-text">
+        <p>PHOTOGRAPH</p>
+        <h1>Photo is life</h1>
+    </div>
+        <div class="feature-box">
+            <div class="feature-img">
+                <img src="./images/photography.webp">
+                <p>Photography is the process of creating still or moving pictures by recording radiation on a sensitive medium like film or an electronic sensor.
+                    The products of photography are called negatives and photographs, the latter being developed from the negatives. Photography became popular
+                    in the middle 19th century with Daguerreotype, and later wet plate and dry plate methods were invented. Most photography in the 20th century 
+                   was on photographic film, and most in the 21st uses digital cameras. A photograph is a small creation full of details, movement, and emotions
+                    of a person. It is a gift of science that is always close to heart because it contains memories of people near and far.</p>
+            </div>
+        </div>
+    
+  </section>
+
+  <!-- More photos -->
+
+  <section id="Photos">
+    <div class="title-text">
+        <p>Some photographs</p>
+        <h1>Enjoy</h1>
+    </div>  
+    <div class="service">
+        <div class="single-service">
+            <img src="./images/fox.webp">
+        </div>
+        <div class="single-service">
+            <img src="./images/owl.webp">
+        </div>
+        <div class="single-service">
+            <img src="./images/kingfisher.webp">
+        </div>
+        <div class="single-service">
+            <img src="./images/wildlife.webp" alt="">
+        </div>
+
+    </div>
+  </section>
+
+  <script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right == "-150px";    
+
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-150px"){
+            sideNav.style.right ="0";
+            menu.src = "images/clode.webp";
+
+        }
+        else{
+            sideNav.style.right = "-150px";
+            menu.src = "images/menu.webp";
+        }
+    }
+  </script>
+    
+</body>
+</html>
